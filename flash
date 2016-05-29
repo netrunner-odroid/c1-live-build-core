@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+set -x
+set -e
+
+# FIXME: All of the following makes lots of assumptions, should be fixed later
+losetup /dev/loop0 *.img
+partprobe /dev/loop0
+mount /dev/loop0p1 /mnt
+cd /mnt/usr/share/c1_uboot/
+./sd_fusing.sh /dev/loop0
+cd
+umount /mnt
+losetup -d /dev/loop0
