@@ -34,6 +34,7 @@ lb config \
  --apt-options "--yes -o Debug::pkgProblemResolver=true -o Debug::pkgDepCache::AutoInstall=true -o Debug::pkgDepCache::Marker=true" \
  --linux-flavours none \
  --linux-packages none \
+ --initramfs none \
  --chroot-filesystem none \
  --binary-filesystem ext4 \
  --hdd-size 6000 \
