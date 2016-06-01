@@ -3,11 +3,12 @@ set -x
 set -e
 
 # FIXME: All of the following makes lots of assumptions, should be fixed later
-losetup /dev/loop0 *.img
-partprobe /dev/loop0
-mount /dev/loop0p1 /mnt
+LODEVICE=$(losetup -f)
+losetup $LODEVICE *.img
+partprobe $LODEVICE
+mount "${LODEVICE}p1" /mnt
 cd /mnt/usr/share/c1_uboot/
-./sd_fusing.sh /dev/loop0
+./sd_fusing.sh $LODEVICE
 cd
 umount /mnt
-losetup -d /dev/loop0
+losetup -d $LODEVICE
