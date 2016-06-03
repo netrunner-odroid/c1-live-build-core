@@ -1,0 +1,11 @@
+echo "I: Running overwrite release files hook"
+if [ -e /usr/share/netrunner-default-settings/os-release ]; then
+	echo "I: Overwriting /etc/os-release"
+	rm /etc/os-release # Just to be sure
+	cp /usr/share/netrunner-default-settings/os-release /etc/os-release
+fi
+if [ -e /usr/share/netrunner-default-settings/lsb-release ]; then
+	echo "I: Overwriting /etc/lsb-release"
+	rm /etc/lsb-release # Just to be sure
+	cp /usr/share/netrunner-default-settings/lsb-release /etc/lsb-release
+fi
