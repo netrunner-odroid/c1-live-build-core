@@ -14,6 +14,7 @@ echo "I: create configuration"
 
 export LB_HDD_PARTITION_START="3072s"
 export LB_BOOTLOADERS="none"
+export LB_HDD_LABEL="ODROID-C1"
 
 # Set Version
 VER=$(date +%Y%m%d.%H%M)
