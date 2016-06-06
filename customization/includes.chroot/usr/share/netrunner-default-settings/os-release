@@ -1,9 +1,0 @@
-NAME="Netrunner"
-VERSION="{VER}, Debian Complete"
-ID=netrunner
-ID_LIKE=debian
-PRETTY_NAME="Netrunner Debian Complete"
-VERSION_ID="{VER}"
-HOME_URL="www.netrunner-os.com"
-SUPPORT_URL="forums.netrunner-os.com"
-BUG_REPORT_URL="https://github.com/netrunner/netrunner-feedback"

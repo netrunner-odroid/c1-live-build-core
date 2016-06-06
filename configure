@@ -45,7 +45,6 @@ echo "I: copy customization"
 test -d customization && cp -rf customization/* config/
 
 sed -i "s,@@TIMESTAMP@@,$DAY,g" config/includes.chroot/boot/boot.ini
-sed -i "s/{VER}/$VER/g" config/includes.chroot/usr/share/netrunner-default-settings/os-release
-sed -i "s/{VER}/$VER/g" config/includes.chroot/usr/share/netrunner-default-settings/lsb-release
+sed -i "s,@@_VER_@@,${VER},g" config/hooks/live/01-overwrite-release-files.hook.chroot
 
 echo "I: done"
