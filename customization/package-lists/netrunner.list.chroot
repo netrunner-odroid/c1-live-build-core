@@ -2,6 +2,7 @@ phonon-backend-gstreamer
 phonon4qt5-backend-gstreamer
 openjdk-8-jre
 
+e2fsprogs/jessie-backports
 c1-netrunner-full
 
 # List of recommends not to install
