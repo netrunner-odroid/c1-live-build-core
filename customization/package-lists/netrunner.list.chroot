@@ -1,18 +1,10 @@
-phonon-backend-gstreamer
 phonon4qt5-backend-gstreamer
-openjdk-8-jre
-
+phonon-backend-gstreamer
 e2fsprogs/jessie-backports
-c1-netrunner-full
 
-# List of recommends not to install
-libreoffice-style-tango-
-nautilus-
-dolphin4- 
-digikam-private-libs- 
-konqueror-
-muon-updater-
-muon-notifier-
+c1-netrunner-core
+
 squashfs-tools-
 grub-pc-
-
+muon-updater-
+muon-notifier-
