@@ -40,6 +40,7 @@ lb config \
  --chroot-filesystem none \
  --binary-filesystem ext4 \
  --hdd-size 6000 \
+ --firmware-chroot false \
  $@
 
 echo "I: copy customization"
