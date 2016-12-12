@@ -5,4 +5,4 @@ deb http://dci.pangea.pub:8080/ds9-common testing main
 deb http://dci.pangea.pub:8080/ds9-artwork testing main
 deb http://dci.pangea.pub:8080/plasmazilla testing main
 deb http://dci.pangea.pub:8080/netrunner-core testing main
-deb http://dci.pangea.pub:8080/netrunner-odroid testing main
+deb http://dci.pangea.pub:8080/odroid testing main

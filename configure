@@ -27,7 +27,6 @@ echo "I: Format is $FMT"
 lb config \
  --architectures armhf \
  --archive-areas 'main contrib non-free' \
- --backports true \
  --distribution testing \
  --binary-images hdd \
  --mode debian \
