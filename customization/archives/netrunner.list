@@ -6,3 +6,5 @@ deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/ds9-artwork
 deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/plasmazilla netrunner-1701 main
 deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/netrunner-core netrunner-1701 main
 deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/backports netrunner-1701 main
+deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/odroid netrunner-1701 main
+deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/frameworks netrunner-1701 main
