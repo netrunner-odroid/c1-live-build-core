@@ -48,6 +48,7 @@ lb config \
  --mirror-chroot $SNAP_URL \
  --mirror-binary $SNAP_URL \
  --mirror-debian-installer $SNAP_URL \
+ --updates false \
  $@
 
 echo "I: copy customization"
