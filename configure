@@ -12,8 +12,6 @@ set -x
 
 echo "I: create configuration"
 
-SNAP_URL='http://snapshot.debian.org/archive/debian/20161211/'
-
 export LB_HDD_PARTITION_START="3072s"
 export LB_BOOTLOADERS="none"
 export LB_HDD_LABEL="ODROID-C1"
@@ -22,7 +20,7 @@ export LB_MKFS_OPTIONS="-O ^64bit,^metadata_csum,uninit_bg"
 # Set Version
 VER=$(date +%Y%m%d.%H%M)
 # Set name for image file
-export LIVE_IMAGE_NAME="netrunner-core-$VER"
+export LIVE_IMAGE_NAME="netrunner-core-$VER-dev"
 
 echo "I: Format is $FMT"
 
@@ -42,13 +40,7 @@ lb config \
  --binary-filesystem ext4 \
  --hdd-size 6000 \
  --firmware-chroot false \
- -m $SNAP_URL \
- --parent-mirror-binary $SNAP_URL \
- --mirror-bootstrap $SNAP_URL \
- --mirror-chroot $SNAP_URL \
- --mirror-binary $SNAP_URL \
- --mirror-debian-installer $SNAP_URL \
- --updates false \
+ --security false \
  $@
 
 echo "I: copy customization"
