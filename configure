@@ -12,8 +12,6 @@ set -x
 
 echo "I: create configuration"
 
-SNAP_URL='http://snapshot.debian.org/archive/debian/20170904/'
-
 export LB_HDD_PARTITION_START="3072s"
 export LB_BOOTLOADERS="none"
 export LB_HDD_LABEL="ODROID-C1"
@@ -29,7 +27,7 @@ echo "I: Format is $FMT"
 lb config \
  --architectures armhf \
  --archive-areas 'main contrib non-free' \
- --distribution testing \
+ --distribution buster \
  --binary-images hdd \
  --mode debian \
  --apt-source-archives false \
@@ -43,12 +41,6 @@ lb config \
  --hdd-size 6000 \
  --firmware-chroot false \
  --security false \
- -m $SNAP_URL \
- --parent-mirror-binary $SNAP_URL \
- --mirror-bootstrap $SNAP_URL \
- --mirror-chroot $SNAP_URL \
- --mirror-binary $SNAP_URL \
- --mirror-debian-installer $SNAP_URL \
  $@
 
 echo "I: copy customization"
