@@ -19,6 +19,7 @@ export LB_MKFS_OPTIONS="-O ^64bit,^metadata_csum,uninit_bg"
 
 # Set Version
 VER=$(date +%Y%m%d.%H%M)
+DAY=$(date +%Y%m%d)
 # Set name for image file
 export LIVE_IMAGE_NAME="netrunner-core-$VER"
 
