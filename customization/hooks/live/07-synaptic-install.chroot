@@ -1,0 +1,6 @@
+echo "I: Workaround install synaptic and mintupdate"
+wget http://ftp.de.debian.org/debian/pool/main/s/synaptic/synaptic_0.84.5_armhf.deb -O /tmp/synaptic.deb
+apt-get -y install /tmp/synaptic.deb
+apt-get install -y -f
+apt-get -y install mintupdate
+rm /tmp/synaptic.deb
