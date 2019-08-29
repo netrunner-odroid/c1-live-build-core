@@ -16,6 +16,7 @@ export LB_HDD_PARTITION_START="3072s"
 export LB_BOOTLOADERS="none"
 export LB_HDD_LABEL="ODROID-C1"
 export LB_MKFS_OPTIONS="-O ^64bit,^metadata_csum,uninit_bg"
+export LB_BOOTSTRAP_INCLUDE="apt-transport-https gnupg initramfs-tools u-boot-tools"
 
 # Set Version
 VER=$(date +%Y%m%d.%H%M)
