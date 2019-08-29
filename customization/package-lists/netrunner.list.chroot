@@ -1,6 +1,7 @@
 phonon4qt5-backend-gstreamer
 phonon-backend-gstreamer
 
+imitramfs-tools
 c1-netrunner-core
 linux-image-c1
 u-boot-tools
