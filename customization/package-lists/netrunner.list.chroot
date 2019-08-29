@@ -2,6 +2,9 @@ phonon4qt5-backend-gstreamer
 phonon-backend-gstreamer
 
 c1-netrunner-core
+linux-image-c1
+u-boot-tools
+u-boot
 
 squashfs-tools-
 grub-pc-
