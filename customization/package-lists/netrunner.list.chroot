@@ -1,8 +1,8 @@
 phonon4qt5-backend-gstreamer
 phonon-backend-gstreamer
 
-initramfs-tools
 c1-netrunner-core
+linux-headers-c1
 linux-image-c1
 u-boot-tools
 u-boot
