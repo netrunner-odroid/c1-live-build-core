@@ -5,7 +5,6 @@ c1-netrunner-core
 linux-headers-c1
 linux-image-c1
 u-boot-tools
-netrunner-arm
 # Should move into a meta package
 mali-x11
 xserver-xorg-video-mali
