@@ -36,6 +36,7 @@ lb config \
  --source false \
  --apt-options "--yes -o Debug::pkgProblemResolver=true -o Debug::pkgDepCache::AutoInstall=true -o Debug::pkgDepCache::Marker=true -o Acquire::Check-Valid-Until=false" \
  --linux-flavours none \
+ --linux-packages linux-headers-4.19.0-6-armmp \
  --linux-packages linux-image-4.19.0-6-armmp \
  --initramfs none \
  --chroot-filesystem none \
