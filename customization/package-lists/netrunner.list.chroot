@@ -4,13 +4,12 @@ phonon-backend-gstreamer
 c1-netrunner-core
 #linux-headers-c1
 #linux-image-c1
-linux-image-4.19.0-5-armmp
 u-boot-tools
 # Should move into a meta package
 mali-x11
 xserver-xorg-video-mali
 odroid-boot-services
-bootini
+c1-bootini
 c1-uboot
 
 squashfs-tools-
