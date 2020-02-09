@@ -51,6 +51,5 @@ test -d customization && cp -rf customization/* config/
 
 sed -i "s,@@TIMESTAMP@@,$DAY,g" config/includes.chroot/boot/boot.ini
 sed -i "s,@@_VER_@@,${VER},g" config/hooks/live/01-overwrite-release-files.hook.chroot
-apt-key adv --keyserver keyserver.ubuntu.com --recv-keys AB19BAC9
 
 echo "I: done"
