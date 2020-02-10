@@ -29,15 +29,15 @@ echo "I: Format is $FMT"
 lb config \
  --architectures armhf \
  --archive-areas 'main contrib non-free' \
- --distribution buster \
+ --distribution stable \
  --binary-images hdd \
  --mode debian \
  --apt-source-archives false \
  --source false \
  --apt-options "--yes -o Debug::pkgProblemResolver=true -o Debug::pkgDepCache::AutoInstall=true -o Debug::pkgDepCache::Marker=true -o Acquire::Check-Valid-Until=false" \
  --linux-flavours none \
- --linux-packages linux-headers-armmp-armhf \
- --linux-packages linux-image-armmp-armhf \
+ --linux-packages linux-headers-4.19.0-8-armmp \
+ --linux-packages linux-image-4.19.0-8-armmp \
  --initramfs none \
  --chroot-filesystem none \
  --binary-filesystem ext4 \
