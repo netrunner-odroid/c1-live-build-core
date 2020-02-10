@@ -36,7 +36,7 @@ lb config \
  --source false \
  --apt-options "--yes -o Debug::pkgProblemResolver=true -o Debug::pkgDepCache::AutoInstall=true -o Debug::pkgDepCache::Marker=true -o Acquire::Check-Valid-Until=false" \
  --linux-flavours armmp \
- --linux-packages linux-image, linux-headers \
+ --linux-packages "linux-image linux-headers" \
  --initramfs none \
  --chroot-filesystem none \
  --binary-filesystem ext4 \
