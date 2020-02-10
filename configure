@@ -35,9 +35,8 @@ lb config \
  --apt-source-archives false \
  --source false \
  --apt-options "--yes -o Debug::pkgProblemResolver=true -o Debug::pkgDepCache::AutoInstall=true -o Debug::pkgDepCache::Marker=true -o Acquire::Check-Valid-Until=false" \
- --linux-flavours none \
- --linux-packages linux-headers-4.19.0-8-armmp \
- --linux-packages linux-image-4.19.0-8-armmp \
+ --linux-flavours armmp \
+ --linux-packages linux-image, linux-headers \
  --initramfs none \
  --chroot-filesystem none \
  --binary-filesystem ext4 \
