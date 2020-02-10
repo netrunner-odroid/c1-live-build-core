@@ -1,1 +1,1 @@
-deb http://deb.odroid.in/c1/ trusty main
+deb [trusted=yes] http://deb.odroid.in/c1/ trusty main
